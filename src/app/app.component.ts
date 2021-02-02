@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PRODUCTS } from './mock-products';
+import { Product } from './product';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gocode-shop';
+  products : Product[] = PRODUCTS;
 }
