@@ -15,4 +15,8 @@ export class MessagesComponent implements OnInit {
     this.messages = this.messageService.messages;
   }
 
+  clearMessages(){
+    this.messageService.clear();
+    this.messages = this.messageService.messages;
+  }
 }
