@@ -1,9 +1,3 @@
-<h1>{{ title }}</h1>
-<section class="heroes">
-    <ul class="heroes">
-        <li *ngFor="let product of products">
-            <span class="badge">{{product.id}}</span> {{product.title}}
-        </li>
-    </ul>
-</section>
+<app-header (filterCatChange)="selectedCategory=$event"></app-header>
 
+<app-products [filterByCategory]="selectedCategory"></app-products>
