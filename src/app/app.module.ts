@@ -8,13 +8,15 @@ import {FormsModule} from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './header/header.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     HeaderComponent,
-    MessagesComponent
+    MessagesComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -15,4 +15,8 @@ export class ProductService {
     return of(PRODUCTS);
   }
   
+  getProduct(id : number){
+    this.messagesService.add('Products found!');
+    return of(PRODUCTS.find(p => p.id == id));
+  }
 }
